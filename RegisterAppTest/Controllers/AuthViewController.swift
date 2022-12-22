@@ -1,3 +1,10 @@
+//
+//  ViewController.swift
+//  Itunes_testTask_youTube
+//
+//  Created by Сергей Горбачёв on 05.10.2021.
+//
+
 import UIKit
 
 class AuthViewController: UIViewController {
@@ -74,15 +81,15 @@ class AuthViewController: UIViewController {
         title = "SignIn"
         view.backgroundColor = .white
         
-        textFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField])
-        textFieldsStackView.spacing = 10
-        textFieldsStackView.axis = .vertical
-        textFieldsStackView.distribution = .fillProportionally
+        textFieldsStackView = UIStackView(arrangedSubviews: [emailTextField, passwordTextField],
+                                          axis: .vertical,
+                                          spacing: 10,
+                                          distribution: .fillProportionally)
         
-        buttonsStackView = UIStackView(arrangedSubviews: [signInButton, signUpButton])
-        buttonsStackView.spacing = 10
-        buttonsStackView.axis = .vertical
-        buttonsStackView.distribution = .fillProportionally
+        buttonsStackView = UIStackView(arrangedSubviews: [signInButton, signUpButton],
+                                             axis: .horizontal,
+                                             spacing: 10,
+                                             distribution: .fillEqually)
         
         view.addSubview(scrollView)
         scrollView.addSubview(backgroundView)
