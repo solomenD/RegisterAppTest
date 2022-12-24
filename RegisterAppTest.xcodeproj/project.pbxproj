@@ -14,6 +14,7 @@
 		677381CC2954E9A800B134B6 /* String + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381CB2954E9A800B134B6 /* String + Extention.swift */; };
 		677381CF295725D300B134B6 /* UserDefeultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381CE295725D300B134B6 /* UserDefeultsManager.swift */; };
 		677381D2295726CE00B134B6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381D1295726CE00B134B6 /* UserModel.swift */; };
+		677381D42957AC3A00B134B6 /* AlertOk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381D32957AC3A00B134B6 /* AlertOk.swift */; };
 		67A3E3152953CECA0081F3A1 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */; };
 		67A3E3172953CEE40081F3A1 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */; };
 		67A3E3192953CEFF0081F3A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */; };
@@ -38,6 +39,7 @@
 		677381CB2954E9A800B134B6 /* String + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extention.swift"; sourceTree = "<group>"; };
 		677381CE295725D300B134B6 /* UserDefeultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefeultsManager.swift; sourceTree = "<group>"; };
 		677381D1295726CE00B134B6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		677381D32957AC3A00B134B6 /* AlertOk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertOk.swift; sourceTree = "<group>"; };
 		67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
 		67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				677381D1295726CE00B134B6 /* UserModel.swift */,
+				677381D32957AC3A00B134B6 /* AlertOk.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				67CD465529544B55001F74AF /* UIStackView + Extension.swift in Sources */,
 				67A3E31B2953CF170081F3A1 /* UserInfoViewController.swift in Sources */,
 				677381CF295725D300B134B6 /* UserDefeultsManager.swift in Sources */,
+				677381D42957AC3A00B134B6 /* AlertOk.swift in Sources */,
 				67A3E3172953CEE40081F3A1 /* DetailAlbumViewController.swift in Sources */,
 				677381D2295726CE00B134B6 /* UserModel.swift in Sources */,
 				677381CC2954E9A800B134B6 /* String + Extention.swift in Sources */,

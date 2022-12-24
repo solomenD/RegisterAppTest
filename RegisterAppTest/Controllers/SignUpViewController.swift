@@ -204,9 +204,18 @@ class SignUpViewController: UIViewController {
             && passwordText.isValid(validType: passwordValidType)
             && phoneText.count == 19
             && aggeIsValid() == true {
-            print("+")
+            
+            DataBase.shared.saveUser(firstName: firstNameText,
+                                     secondName: secondNameText,
+                                     phoneNumber: phoneText,
+                                     email: emailText,
+                                     password: passwordText,
+                                     age: datePicker.date)
+            loginLabel.text = "Registration successful"
+            
         } else {
-            print("-")
+            loginLabel.text = "Registration"
+            alertOk(title: "Error", message: "Fill in all the fields and age most be 18+ y.o.")
         }
         
     }
