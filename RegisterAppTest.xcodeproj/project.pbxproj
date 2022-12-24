@@ -12,6 +12,8 @@
 		6741B9C32953B1BA00AF206A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6741B9C22953B1BA00AF206A /* Assets.xcassets */; };
 		6741B9C62953B1BA00AF206A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6741B9C42953B1BA00AF206A /* LaunchScreen.storyboard */; };
 		677381CC2954E9A800B134B6 /* String + Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381CB2954E9A800B134B6 /* String + Extention.swift */; };
+		677381CF295725D300B134B6 /* UserDefeultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381CE295725D300B134B6 /* UserDefeultsManager.swift */; };
+		677381D2295726CE00B134B6 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381D1295726CE00B134B6 /* UserModel.swift */; };
 		67A3E3152953CECA0081F3A1 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */; };
 		67A3E3172953CEE40081F3A1 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */; };
 		67A3E3192953CEFF0081F3A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */; };
@@ -34,6 +36,8 @@
 		6741B9C52953B1BA00AF206A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6741B9C72953B1BA00AF206A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		677381CB2954E9A800B134B6 /* String + Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extention.swift"; sourceTree = "<group>"; };
+		677381CE295725D300B134B6 /* UserDefeultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefeultsManager.swift; sourceTree = "<group>"; };
+		677381D1295726CE00B134B6 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
 		67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -96,12 +100,30 @@
 		6741B9B82953B1B800AF206A /* RegisterAppTest */ = {
 			isa = PBXGroup;
 			children = (
+				677381D0295726BE00B134B6 /* Models */,
 				678D1FA12953BA19000001B5 /* Controllers */,
 				678D1FA02953B9D2000001B5 /* Applications */,
-				678D1F9F2953B8ED000001B5 /* Resources */,
+				677381CD295725A700B134B6 /* Servises */,
 				678D1FA32953BA38000001B5 /* Extentions */,
+				678D1F9F2953B8ED000001B5 /* Resources */,
 			);
 			path = RegisterAppTest;
+			sourceTree = "<group>";
+		};
+		677381CD295725A700B134B6 /* Servises */ = {
+			isa = PBXGroup;
+			children = (
+				677381CE295725D300B134B6 /* UserDefeultsManager.swift */,
+			);
+			path = Servises;
+			sourceTree = "<group>";
+		};
+		677381D0295726BE00B134B6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				677381D1295726CE00B134B6 /* UserModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		678D1F9F2953B8ED000001B5 /* Resources */ = {
@@ -257,7 +279,9 @@
 				67CD461F29543D50001F74AF /* SceneDelegate.swift in Sources */,
 				67CD465529544B55001F74AF /* UIStackView + Extension.swift in Sources */,
 				67A3E31B2953CF170081F3A1 /* UserInfoViewController.swift in Sources */,
+				677381CF295725D300B134B6 /* UserDefeultsManager.swift in Sources */,
 				67A3E3172953CEE40081F3A1 /* DetailAlbumViewController.swift in Sources */,
+				677381D2295726CE00B134B6 /* UserModel.swift in Sources */,
 				677381CC2954E9A800B134B6 /* String + Extention.swift in Sources */,
 				6741B9BA2953B1B800AF206A /* AppDelegate.swift in Sources */,
 				67A3E3152953CECA0081F3A1 /* AlbumsViewController.swift in Sources */,
