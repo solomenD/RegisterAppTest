@@ -68,7 +68,7 @@ class AuthViewController: UIViewController {
     
     private var textFieldsStackView = UIStackView()
     private var buttonsStackView = UIStackView()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -76,12 +76,13 @@ class AuthViewController: UIViewController {
         setupDelegate()
         setConstraints()
         registerKeyboardNotification()
+        
     }
     
     deinit {
         removeKeyboardNotification()
     }
-
+    
     private func setupViews() {
         title = "SignIn"
         view.backgroundColor = .white
@@ -92,9 +93,9 @@ class AuthViewController: UIViewController {
                                           distribution: .fillProportionally)
         
         buttonsStackView = UIStackView(arrangedSubviews: [signInButton, signUpButton],
-                                             axis: .horizontal,
-                                             spacing: 10,
-                                             distribution: .fillEqually)
+                                       axis: .horizontal,
+                                       spacing: 10,
+                                       distribution: .fillEqually)
         
         view.addSubview(scrollView)
         scrollView.addSubview(backgroundView)
@@ -114,10 +115,46 @@ class AuthViewController: UIViewController {
     }
     
     @objc private func signInButtonTapped() {
-        let navVC = UINavigationController(rootViewController: AlbumsViewController())
-        navVC.modalPresentationStyle = .fullScreen
-        self.present(navVC, animated: true)
+        
+        let mail = emailTextField.text ?? ""
+        
+        let password = passwordTextField.text ?? ""
+        
+        let user = findUsersDataBase(mail: mail)
+        
+        if user == nil {
+            loginLabel.text = "User not found"
+            loginLabel.textColor = .red
+        } else if user?.password == password {
+            let navVC = UINavigationController(rootViewController: AlbumsViewController())
+            navVC.modalPresentationStyle = .fullScreen
+            self.present(navVC, animated: true)
+            
+            guard let activeUser = user else { return }
+            DataBase.shared.saveActiveUser(user: activeUser)
+            
+        } else {
+            loginLabel.text = "Wong password"
+            loginLabel.textColor = .red
+            }
+
     }
+    
+    private func findUsersDataBase(mail: String) -> User? {
+        
+        let dataBase = DataBase.shared.users
+        print(dataBase)
+        
+        for user in dataBase {
+            if user.email == mail {
+                return user
+            }
+        }
+        
+        return nil
+        
+    }
+    
 }
 
 //MARK: - UITextFieldDelegate
@@ -149,7 +186,7 @@ extension AuthViewController {
     private func removeKeyboardNotification() {
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
-
+        
     }
     
     @objc private func keyboardWillShow(notification: Notification) {

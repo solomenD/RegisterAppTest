@@ -67,10 +67,11 @@ class AlbumsTableViewCell: UITableViewCell {
         self.addSubview(albumLogo)
         self.addSubview(albumNameLabel)
         
-        stackView = UIStackView(arrangedSubviews: [artistNameLabel, trackCountLabel])
-        stackView.axis = .vertical
-        stackView.distribution = .fillProportionally
-        stackView.spacing = 10
+        stackView = UIStackView(arrangedSubviews: [artistNameLabel, trackCountLabel],
+                                        axis: .horizontal,
+                                        spacing: 10,
+                                        distribution: .equalCentering)
+ //Forgot Added TAMC       stackView.translatesAutoresizingMaskIntoConstraints = false
         self.addSubview(stackView)
     }
 

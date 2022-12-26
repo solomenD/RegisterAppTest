@@ -75,7 +75,26 @@ class UserInfoViewController: UIViewController {
                                 distribution: .fillProportionally)
         
         view.addSubview(stackView)
+        setModel()
     }
+    
+    private func setModel() {
+        guard let activeUser = DataBase.shared.activeUser else { return }
+        
+        let dateFormater = DateFormatter()
+        
+        dateFormater.dateFormat = "dd.MM.yyyy"
+        
+        let dateString = dateFormater.string(from: activeUser.age)
+        firstNameLabel.text = activeUser.firstName
+        secondNameLabel.text = activeUser.secondName
+        phoneLabel.text = activeUser.phoneNumber
+        emailLabel.text = activeUser.email
+        passwordLabel.text = activeUser.password
+        ageLabel.text = dateString
+        
+    }
+    
 }
 
 //MARK: - SetConstraints
