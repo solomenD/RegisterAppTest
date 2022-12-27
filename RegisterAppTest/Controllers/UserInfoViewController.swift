@@ -82,7 +82,6 @@ class UserInfoViewController: UIViewController {
         guard let activeUser = DataBase.shared.activeUser else { return }
         
         let dateFormater = DateFormatter()
-        
         dateFormater.dateFormat = "dd.MM.yyyy"
         
         let dateString = dateFormater.string(from: activeUser.age)
