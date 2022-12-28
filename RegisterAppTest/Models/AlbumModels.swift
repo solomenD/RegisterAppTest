@@ -8,14 +8,15 @@
 import Foundation
 
 
-struct AlbumModels: Decodable {
+struct AlbumModels: Decodable, Equatable {
     let results: [Results]
 }
 
-struct Results: Decodable {
+struct Results: Decodable, Equatable {
     let artistName: String?
-    let collectionName: String?
+    let collectionName: String
     let artworkUrl100: String?
-    let trackCount: Int?
-    let releaseDate: String?
+    let trackCount: Int
+    let releaseDate: String
+    let collectionId: Int
 }

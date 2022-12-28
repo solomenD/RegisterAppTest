@@ -18,6 +18,7 @@
 		677381D6295B2E7700B134B6 /* AlbumModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381D5295B2E7700B134B6 /* AlbumModels.swift */; };
 		677381D9295B337500B134B6 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381D8295B337500B134B6 /* NetworkRequest.swift */; };
 		677381DB295B359600B134B6 /* NetworkDataFetch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381DA295B359600B134B6 /* NetworkDataFetch.swift */; };
+		677381DD295C971800B134B6 /* SongsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677381DC295C971800B134B6 /* SongsModel.swift */; };
 		67A3E3152953CECA0081F3A1 /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */; };
 		67A3E3172953CEE40081F3A1 /* DetailAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */; };
 		67A3E3192953CEFF0081F3A1 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */; };
@@ -46,6 +47,7 @@
 		677381D5295B2E7700B134B6 /* AlbumModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumModels.swift; sourceTree = "<group>"; };
 		677381D8295B337500B134B6 /* NetworkRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
 		677381DA295B359600B134B6 /* NetworkDataFetch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkDataFetch.swift; sourceTree = "<group>"; };
+		677381DC295C971800B134B6 /* SongsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsModel.swift; sourceTree = "<group>"; };
 		67A3E3142953CECA0081F3A1 /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
 		67A3E3162953CEE40081F3A1 /* DetailAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailAlbumViewController.swift; sourceTree = "<group>"; };
 		67A3E3182953CEFF0081F3A1 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				677381D1295726CE00B134B6 /* UserModel.swift */,
 				677381D32957AC3A00B134B6 /* AlertOk.swift */,
 				677381D5295B2E7700B134B6 /* AlbumModels.swift */,
+				677381DC295C971800B134B6 /* SongsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -307,6 +310,7 @@
 				677381CC2954E9A800B134B6 /* String + Extention.swift in Sources */,
 				6741B9BA2953B1B800AF206A /* AppDelegate.swift in Sources */,
 				677381DB295B359600B134B6 /* NetworkDataFetch.swift in Sources */,
+				677381DD295C971800B134B6 /* SongsModel.swift in Sources */,
 				67A3E3152953CECA0081F3A1 /* AlbumsViewController.swift in Sources */,
 				67A3E31D2953CF4C0081F3A1 /* AlbumsTableViewCell.swift in Sources */,
 				67A3E3192953CEFF0081F3A1 /* SignUpViewController.swift in Sources */,
