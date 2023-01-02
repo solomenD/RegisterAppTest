@@ -68,7 +68,9 @@ class AlbumsViewController: UIViewController {
     
     @objc private func logOutButtonTapped() {
         let authViewController = AuthViewController()
+        authViewController.modalPresentationStyle = .fullScreen
         self.present(authViewController, animated: true)
+        
     }
     
     private func fetchAlbums(albumName: String) {
