@@ -49,8 +49,11 @@ class AlbumsViewController: UIViewController {
         
         navigationItem.searchController = searchController
         
-        let userInfoButton = createCustomButton(selector: #selector(userInfoButtonTapped))
+        let userInfoButton = createCustomButton(selector: #selector(userInfoButtonTapped), setIcon: "person.fill")
+        let logOutButton = createCustomButton(selector: #selector(logOutButtonTapped), setIcon: "rectangle.portrait.and.arrow.forward")
+
         navigationItem.rightBarButtonItem = userInfoButton
+        navigationItem.leftBarButtonItem = logOutButton
     }
     
     private func setupSearchController() {
@@ -61,7 +64,11 @@ class AlbumsViewController: UIViewController {
     @objc private func userInfoButtonTapped() {
         let userInfoViewController = UserInfoViewController()
         navigationController?.pushViewController(userInfoViewController, animated: true)
-        
+    }
+    
+    @objc private func logOutButtonTapped() {
+        let authViewController = AuthViewController()
+        self.present(authViewController, animated: true)
     }
     
     private func fetchAlbums(albumName: String) {
