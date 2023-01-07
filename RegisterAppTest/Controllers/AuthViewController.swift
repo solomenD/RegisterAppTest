@@ -46,7 +46,7 @@ class AuthViewController: UIViewController {
     
     private let signUpButton: UIButton = {
         let button = UIButton(type: .system)
-        button.backgroundColor = #colorLiteral(red: 0.3098039329, green: 0.01568627544, blue: 0.1294117719, alpha: 1)
+        button.backgroundColor = #colorLiteral(red: 0.4392156899, green: 0.01176470611, blue: 0.1921568662, alpha: 1)
         button.setTitle("SignUP", for: .normal)
         button.tintColor = .white
         button.layer.cornerRadius = 10
